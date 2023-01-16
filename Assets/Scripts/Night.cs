@@ -8,4 +8,9 @@ public class Night : MonoBehaviour
     {
         camera.backgroundColor = Color.black;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        camera.backgroundColor = Color.black;
+    }
 }

@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     public Sprite idle;
     string oldDirection = "right";
     string direction = "right";
-    bool jumping = false;
-    float jumpTimer;
+    public static bool isTouchingGround = true;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -51,21 +51,11 @@ public class PlayerController : MonoBehaviour
             animator.runtimeAnimatorController = null;
         }
 
-        if (Input.GetKey(KeyCode.Space) && !jumping)
+        if (Input.GetKey(KeyCode.Space) && isTouchingGround)
         {
             rb.velocity = new Vector2(rb.velocity.x,
-                5f);
-            jumping = true;
-        }
-
-        if (jumping)
-        {
-            jumpTimer += Time.deltaTime;
-            if(jumpTimer >= 1f)
-            {
-                jumping = false;
-                jumpTimer = 0f;
-            }
+                6f);
+            isTouchingGround = false;
         }
     }
 }
