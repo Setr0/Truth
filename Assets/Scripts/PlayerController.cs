@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     string oldDirection = "right";
     string direction = "right";
     public static bool isTouchingGround = true;
+    bool onLadder = false;
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = new Vector2(Input.GetAxis("Horizontal") * 6f,
-            rb.velocity.y); 
+        rb.velocity.y);
 
         if(rb.velocity.x > 0f)
         {
@@ -51,11 +52,43 @@ public class PlayerController : MonoBehaviour
             animator.runtimeAnimatorController = null;
         }
 
-        if (Input.GetKey(KeyCode.Space) && isTouchingGround)
+        if (Input.GetKey(KeyCode.Space) && isTouchingGround && !onLadder)
         {
             rb.velocity = new Vector2(rb.velocity.x,
                 6f);
             isTouchingGround = false;
+        }
+
+        if(Input.GetKey(KeyCode.W) && onLadder)
+        {
+            rb.velocity = new Vector2(rb.velocity.x,
+                5f);
+        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "ladder")
+        {
+            onLadder = true;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "rock")
+        {
+            transform.position = new Vector2(29.17f,
+                -3.6f);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "ladder")
+        {
+            onLadder = false;
         }
     }
 }
