@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -8,10 +6,11 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer spriteRender;
     Animator animator;
     public RuntimeAnimatorController animatorController;
+    public AudioSource jumpSound;
+    public AudioSource ladderSound;
     public Sprite idle;
     string oldDirection = "right";
     string direction = "right";
-    public static bool isTouchingGround = true;
     bool onLadder = false;
 
     void Start()
@@ -52,17 +51,18 @@ public class PlayerController : MonoBehaviour
             animator.runtimeAnimatorController = null;
         }
 
-        if (Input.GetKey(KeyCode.Space) && isTouchingGround && !onLadder)
+        if (Input.GetKey(KeyCode.Space) && PlayerTouchingGround.isTouchingGround && !onLadder)
         {
             rb.velocity = new Vector2(rb.velocity.x,
                 6f);
-            isTouchingGround = false;
+            jumpSound.Play();
         }
 
         if(Input.GetKey(KeyCode.W) && onLadder)
         {
             rb.velocity = new Vector2(rb.velocity.x,
                 5f);
+            if(Input.GetKey(KeyCode.W) && !ladderSound.isPlaying) ladderSound.Play();
         }
 
     }
@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "ladder")
         {
             onLadder = false;
+            ladderSound.Stop();
         }
     }
 }
