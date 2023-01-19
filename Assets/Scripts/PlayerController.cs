@@ -82,6 +82,10 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector2(29.17f,
                 -3.6f);
         }
+        if(collision.gameObject.tag == "floor")
+        {
+
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
