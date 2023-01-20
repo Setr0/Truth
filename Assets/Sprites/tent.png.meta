@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7bb952dcbe9af8f48912f93321f973cb
+guid: eb1b13ac0fabb914f9d066bd0d2f0be4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,64 +129,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MiddleCharacter_0
+      name: tent_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 78
-        width: 22
-        height: 24
+        x: 9
+        y: 28
+        width: 82
+        height: 45
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89da9c0cd11b4e442812ed4390f9efa7
-      internalID: 199268750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiddleCharacter_1
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 78
-        width: 22
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d6862ef69a50f942a2eaf2273bc33e9
-      internalID: -67797793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiddleCharacter_2
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 18
-        width: 22
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d5f5fb939c7acd4aaf880b85fff7e02
-      internalID: 409794962
+      spriteID: 9bcdf127fe70c144c94884905a766802
+      internalID: -970941149
       vertices: []
       indices: 
       edges: []
@@ -202,9 +160,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MiddleCharacter_1: -67797793
-      MiddleCharacter_0: 199268750
-      MiddleCharacter_2: 409794962
+      tent_0: -970941149
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1141,7 +1141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -783743826, guid: 70364ba896a5b7c4ab81f681ac77f282, type: 3}
+  m_Sprite: {fileID: 409794962, guid: 7bb952dcbe9af8f48912f93321f973cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4286,7 +4286,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0.09411765, a: 0}
+  m_BackGroundColor: {r: 0.03529412, g: 0.06666667, b: 0.13333334, a: 255}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

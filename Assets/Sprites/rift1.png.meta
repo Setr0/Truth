@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7bb952dcbe9af8f48912f93321f973cb
+guid: b2d6ec840aa64d4498f12bdf24d0f70b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,70 +127,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: MiddleCharacter_0
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 78
-        width: 22
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89da9c0cd11b4e442812ed4390f9efa7
-      internalID: 199268750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiddleCharacter_1
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 78
-        width: 22
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d6862ef69a50f942a2eaf2273bc33e9
-      internalID: -67797793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiddleCharacter_2
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 18
-        width: 22
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d5f5fb939c7acd4aaf880b85fff7e02
-      internalID: 409794962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -201,10 +138,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      MiddleCharacter_1: -67797793
-      MiddleCharacter_0: 199268750
-      MiddleCharacter_2: 409794962
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class EndMessage : MonoBehaviour
 {
-    public GameObject endMessage;
+    public GameObject endPanel;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        endMessage.SetActive(true);
+        endPanel.SetActive(true);
     }
 }
