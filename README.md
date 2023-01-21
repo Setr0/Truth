@@ -1,5 +1,3 @@
-# Truth
-A videogame on razzism
 <h1 align="center">The-farmer-Remake</h1>
 
 <div align="center">
