@@ -8,5 +8,5 @@
 
 <h3>Requirements</h3>
 <ul>
-  <li>Unity version <a href="unityhub://2020.3.42f1/7ade1201f527">2021.3.9f1</a></li>
+  <li>Unity version <a href="unityhub://2021.3.9f1/ad3870b89536">2021.3.9f1</a></li>
 </ul>
