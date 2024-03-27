@@ -4,4 +4,4 @@
   <img src="app.png" />
 </div>
 
-<h2>A Videogame for promoting the inclusivity made with Unity for desktop devices</h2>
+## A Videogame for promoting the inclusivity made with Unity for desktop devices
